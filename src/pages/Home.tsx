@@ -34,7 +34,7 @@ export function Home({ go }: { go: (page: Page) => void }) {
                 </>
             ) : (
                 <>
-                    <img src="./public/logo-cirthesis.png" alt="Logo Cirthesis" />
+                    <img src="/logo-cirthesis.png" alt="Logo Cirthesis" />
                     <p>CIR<br/>THESIS</p>
                 </>
             )}
