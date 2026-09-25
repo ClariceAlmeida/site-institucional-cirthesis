@@ -3,6 +3,7 @@ import { Page } from '../types/navigation';
 import { Geral } from '../types/sheet';
 import { CSV_URL_GERAL } from '../config/sheets';
 import { useSheetData } from '../hooks/useSheetData';
+import logoCirthesis from '../assets/logo-cirthesis.png';
 
 const fallback: Geral = {
   frase_inicial: 'O circo é um espaço para mover, criar e pertencer.',
@@ -34,7 +35,7 @@ export function Home({ go }: { go: (page: Page) => void }) {
                 </>
             ) : (
                 <>
-                    <img src="/logo-cirthesis.png" alt="Logo Cirthesis" />
+                    <img src={logoCirthesis} alt="Logo Cirthesis" />
                     <p>CIR<br/>THESIS</p>
                 </>
             )}
