@@ -1,7 +1,4 @@
-import { useState } from 'react';
-
 export function Contact() {
-  const [sent, setSent] = useState(false);
   return(
     <main className="contact-page">
       <div className="wrap contact-grid">
@@ -14,10 +11,8 @@ export function Contact() {
             <a href="https://www.instagram.com/cirthesis/" target="_blank" rel="noopener noreferrer" className="social contact-link">Instagram · @cirthesis</a>
           </p>
         </div>
-          <a id="matricula-link" href="https://docs.google.com/forms/d/e/1FAIpQLSe-iwlR7QP7DWvNXdsE2NtPcecbQJcmdITKarSGpg9BVR36xg/viewform" target="_blank" rel="noopener noreferrer">
-            <button className="button button-primary">
-              Realizar matrícula
-            </button>
+          <a id="matricula-link" className="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe-iwlR7QP7DWvNXdsE2NtPcecbQJcmdITKarSGpg9BVR36xg/viewform" target="_blank" rel="noopener noreferrer">
+            Realizar matrícula <b>→</b>
           </a>
       </div>
     </main>

@@ -1,0 +1,128 @@
+.eyebrow,
+.section-title>span {
+    display: block;
+    margin: 0 0 18px;
+    color: var(--orange);
+    font: 500 .73rem 'DM Mono', monospace;
+    letter-spacing: .11em;
+    text-transform: uppercase
+}
+
+.section-title {
+    max-width: 720px;
+    margin-bottom: 75px
+}
+
+.section-title h1,
+.contact-grid h1 {
+    font-size: clamp(3.2rem, 7vw, 6.6rem);
+    margin-bottom: 20px
+}
+
+.section-title>p {
+    color: #665953;
+    line-height: 1.6;
+    font-size: 1.12rem
+}
+
+.button {
+    border: 0;
+    border-radius: 99px;
+    padding: 14px 19px;
+    font-weight: 700
+}
+
+.button-primary {
+    color: var(--wine);
+    background: var(--yellow)
+}
+
+.button b {
+    padding-left: 10px;
+    font-size: 1.25em
+}
+
+#matricula-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--wine)
+}
+
+.notice {
+    margin-top: 85px;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    background: var(--yellow)
+}
+
+.notice>div {
+    max-width: 640px
+}
+
+.notice h2 {
+    font-size: 3rem
+}
+
+.center {
+    text-align: center;
+    margin-top: 48px
+}
+
+.pill-list {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap
+}
+
+.pill-list span {
+    border: 1px solid var(--wine);
+    color: var(--wine);
+    padding: 9px 12px;
+    border-radius: 99px
+}
+
+.faq {
+    max-width: 920px
+}
+
+.faq .section-title {
+    margin-bottom: 50px
+}
+
+.faq article {
+    border-top: 1px solid var(--line)
+}
+
+.faq article:last-child {
+    border-bottom: 1px solid var(--line)
+}
+
+.faq article>button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+    padding: 26px 0;
+    border: 0;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 700
+}
+
+.faq article>button b {
+    color: var(--wine);
+    font-size: 1.7rem;
+    line-height: .8
+}
+
+.faq article>p {
+    max-width: 650px;
+    padding-bottom: 26px;
+    margin-bottom: 0
+}

@@ -17,6 +17,7 @@ const fallback: Geral = {
 export function Home({ go }: { go: (page: Page) => void }) {
   const { data, loading } = useSheetData<Geral>(CSV_URL_GERAL);
   const geral = data[0] || fallback;
+  const mediaDestaque = geral.foto_video_destaque?.trim();
   const benefits = (geral.beneficios_circo || fallback.beneficios_circo!).split(',').map((item) => item.trim()).filter(Boolean);
   return(
     <>
@@ -28,9 +29,9 @@ export function Home({ go }: { go: (page: Page) => void }) {
             <Cta onClick={() => go('contato')} />
         </div>
         <div className="hero-art" aria-label="Ilustração abstrata de uma artista circense">
-            {geral.foto_video_destaque ? (
+            {mediaDestaque ? (
                 <>
-                    <img src={geral.foto_video_destaque} alt={geral.alt_foto} />
+                    <img src={mediaDestaque} alt={geral.alt_foto || 'Imagem em destaque da Cirthesis'} />
                     <p>CIR<br/>THESIS</p>
                 </>
             ) : (

@@ -1,0 +1,97 @@
+.wrap {
+    width: min(1120px, calc(100% - 48px));
+    margin-inline: auto
+}
+
+.page {
+    padding-block: 95px 120px
+}
+
+.topbar {
+    min-height: 82px;
+    padding: 0 max(24px, calc((100vw - 1120px)/2));
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-bottom: 1px solid var(--line)
+}
+
+.brand {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--wine);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    line-height: .85;
+    text-align: left
+}
+
+.brand span {
+    display: block;
+    font-size: .77em;
+    letter-spacing: .28em
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: auto
+}
+
+nav button,
+.contact-button,
+.text-link {
+    border: 0;
+    background: none;
+    color: var(--ink);
+    padding: 6px 0;
+    font-size: .88rem
+}
+
+nav button:hover,
+nav .active,
+.text-link {
+    color: var(--wine);
+    font-weight: 700
+}
+
+.contact-button {
+    border: 1px solid var(--wine);
+    color: var(--wine);
+    padding: 10px 17px;
+    border-radius: 99px;
+    font-weight: 700
+}
+
+footer {
+    min-height: 240px;
+    padding: 55px max(24px, calc((100vw - 1120px)/2));
+    background: var(--ink);
+    color: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: start
+}
+
+footer .brand {
+    color: var(--yellow)
+}
+
+footer p {
+    margin: 0;
+    opacity: .7;
+    font-size: .88rem
+}
+
+footer p:last-child {
+    grid-column: 2;
+    align-self: end
+}
